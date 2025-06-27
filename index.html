@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>FashionTrend — стиль начинается с тебя</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    .top-links {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+    }
+
+    .top-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: bold;
+    }
+
+    .content {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .intro {
+      font-size: 20px;
+      line-height: 1.6;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .product {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 280px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+    }
+
+    .info {
+      padding: 15px;
+    }
+
+    .info h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+
+    .info p {
+      font-size: 16px;
+      margin: 0 0 10px;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 18px;
+      color: #e91e63;
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      padding: 20px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="top-links">
+      <a href="https://t.me/sheriiikyu" target="_blank">Telegram</a>
+      <a href="https://instagram.com/sheriiikyu" target="_blank">Instagram</a>
+    </div>
+    <h1>FashionTrend</h1>
+    <p>Стиль начинается с тебя — вдохновляй и выделяйся</p>
+  </header>
+
+  <div class="content">
+    <div class="intro">
+      <p>
+        FashionTrend — это больше, чем просто магазин. Это пространство, где каждая вещь отражает твой стиль. Добавляй свои фото одежды — и смотри, как оживает твой сайт.
+      </p>
+    </div>
+
+    <div class="products">
+      <!-- Пример одного товара. Добавляй свои фото сюда -->
+      <div class="product">
+        <img src="coat.jpg" alt="Пальто" />
+        <div class="info">
+          <h3>Осеннее пальто</h3>
+          <p>Уютное и стильное пальто на каждый день.</p>
+          <div class="price">₽8 500</div>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="suit.jpg" alt="Костюм" />
+        <div class="info">
+          <h3>Классический костюм</h3>
+          <p>Идеальный выбор для офиса и деловых встреч.</p>
+          <div class="price">₽12 000</div>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="dress.jpg" alt="Платье" />
+        <div class="info">
+          <h3>Летнее платье</h3>
+          <p>Лёгкое платье для жарких дней.</p>
+          <div class="price">₽4 300</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 FashionTrend. Все права защищены.
+  </footer>
+
+</body>
+</html>
