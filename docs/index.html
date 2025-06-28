@@ -2,155 +2,149 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>FashionTrend — стиль начинается с тебя</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LuxPromo — Агентство Продвижения</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      min-height: 100vh;
     }
 
     header {
-      background: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 50px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
       color: #fff;
-      padding: 40px 20px;
+    }
+
+    .contacts {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .contacts a img {
+      width: 28px;
+      height: 28px;
+      transition: transform 0.2s;
+    }
+
+    .contacts a img:hover {
+      transform: scale(1.1);
+    }
+
+    main {
       text-align: center;
-      position: relative;
+      padding: 80px 20px 60px;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 40px;
+    h1 {
+      font-size: 52px;
+      margin-bottom: 20px;
     }
 
-    .top-links {
-      position: absolute;
-      top: 15px;
-      right: 20px;
-    }
-
-    .top-links a {
-      color: white;
-      text-decoration: none;
-      margin-left: 15px;
-      font-weight: bold;
-    }
-
-    .content {
-      max-width: 1200px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-
-    .intro {
+    p {
       font-size: 20px;
-      line-height: 1.6;
-      margin-bottom: 40px;
-      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 25px;
+      line-height: 1.7;
     }
 
-    .products {
+    .cta {
+      margin-top: 40px;
+    }
+
+    .cta a {
+      background-color: #f3c623;
+      color: #000;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .cta a:hover {
+      background-color: #ffe16b;
+    }
+
+    .gallery {
       display: flex;
       flex-wrap: wrap;
-      gap: 30px;
       justify-content: center;
+      gap: 20px;
+      padding: 60px 20px;
     }
 
-    .product {
-      background: white;
-      border-radius: 10px;
-      overflow: hidden;
-      width: 280px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
-
-    .product img {
-      width: 100%;
-      height: 360px;
+    .gallery img {
+      width: 300px;
+      height: 200px;
       object-fit: cover;
-    }
-
-    .info {
-      padding: 15px;
-    }
-
-    .info h3 {
-      margin: 0 0 10px;
-      font-size: 20px;
-    }
-
-    .info p {
-      font-size: 16px;
-      margin: 0 0 10px;
-    }
-
-    .price {
-      font-weight: bold;
-      font-size: 18px;
-      color: #e91e63;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
     }
 
     footer {
-      background: #222;
-      color: #ccc;
-      padding: 20px;
       text-align: center;
+      padding: 20px;
+      background-color: rgba(0,0,0,0.4);
+      font-size: 14px;
     }
-
   </style>
 </head>
 <body>
-
   <header>
-    <div class="top-links">
-      <a href="https://t.me/sheriiikyu" target="_blank">Telegram</a>
-      <a href="https://instagram.com/sheriiikyu" target="_blank">Instagram</a>
+    <div class="logo">LuxPromo</div>
+    <div class="contacts">
+      <a href="https://t.me/sheriiikyu" target="_blank">
+        <img src="telegram.png" alt="Telegram">
+      </a>
+      <a href="https://wa.me/998901234567" target="_blank">
+        <img src="whatsapp.png" alt="WhatsApp">
+      </a>
+      <a href="tel:+998901234567" style="color: white; text-decoration: none; font-weight: 600;">
+        +998 90 123 45 67
+      </a>
     </div>
-    <h1>FashionTrend</h1>
-    <p>Стиль начинается с тебя — вдохновляй и выделяйся</p>
   </header>
 
-  <div class="content">
-    <div class="intro">
-      <p>
-        FashionTrend — это больше, чем просто магазин. Это пространство, где каждая вещь отражает твой стиль. Добавляй свои фото одежды — и смотри, как оживает твой сайт.
-      </p>
+  <main>
+    <h1>Премиум-продвижение брендов</h1>
+    <p>LuxPromo — это агентство digital-маркетинга нового уровня. Мы усиливаем бренды с помощью комплексных стратегий продвижения, социальных сетей, дизайна и таргета. Мы делаем ваш бизнес узнаваемым, заметным и прибыльным.</p>
+    <p>Каждое решение мы принимаем, опираясь на аналитику и визуальный стиль. Мы работаем с крупными брендами, малым бизнесом и амбициозными стартапами.</p>
+    <div class="cta">
+      <a href="https://t.me/sheriiikyu" target="_blank">Получить консультацию</a>
     </div>
+  </main>
 
-    <div class="products">
-      <!-- Пример одного товара. Добавляй свои фото сюда -->
-      <div class="product">
-        <img src="coat.jpg" alt="Пальто" />
-        <div class="info">
-          <h3>Осеннее пальто</h3>
-          <p>Уютное и стильное пальто на каждый день.</p>
-          <div class="price">₽8 500</div>
-        </div>
-      </div>
+  <section class="gallery">
+    <img src="https://images.unsplash.com/photo-1562577309-2592ab84b1bc?auto=format&fit=crop&w=800&q=80" alt="Digital Marketing">
+    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80" alt="Creative Work">
+    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80" alt="Team Collaboration">
+    <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=800&q=80" alt="Strategy">
+  </section>
 
-      <div class="product">
-        <img src="suit.jpg" alt="Костюм" />
-        <div class="info">
-          <h3>Классический костюм</h3>
-          <p>Идеальный выбор для офиса и деловых встреч.</p>
-          <div class="price">₽12 000</div>
-        </div>
-      </div>
-
-      <div class="product">
-        <img src="dress.jpg" alt="Платье" />
-        <div class="info">
-          <h3>Летнее платье</h3>
-          <p>Лёгкое платье для жарких дней.</p>
-          <div class="price">₽4 300</div>
-        </div>
-      </div>
-    </div>
-  </div>
-<footer style="text-align: center; margin: 20px;">
-  <a href="new.html" style="text-decoration:none; color:#0077cc;">Перейти к новой версии сайта</a>
-</footer>  
+  <footer>
+    © 2025 LuxPromo. Все права защищены.
+  </footer>
 </body>
-</html><a href="new.html">Перейти к новой версии сайта</a>
+</html>
